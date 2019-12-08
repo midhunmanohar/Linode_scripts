@@ -1,0 +1,33 @@
+import flask
+from flask import request, jsonify
+import json
+from time import gmtime, strftime
+
+#app = flask.Flask(__name__)
+#app.config["DEBUG"] = True
+
+# Create some test data for our catalog in the form of a list of dictionaries.
+#def get_time():
+#    with open(r'/root/python_api/timer1.json') as json_file:
+#        f= json.load(json_file)
+#        return f
+
+#def porchlight_time():
+#    with open(r'/root/python_api/porch_timer.json') as json_file:
+#        f= json.load(json_file)
+#        return f
+
+
+#@app.route('/', methods=['GET'])
+#def home():
+#    return 
+
+
+# A route to return all of the available entries in our catalog.
+#@app.route('/api/time', methods=['GET'])
+def timeset():
+    data = strftime("%a, %d %b %Y %H:%M:%S +0000") 
+    print(data)
+#    return jsonify(data)
+timeset()
+#app.run("0.0.0.0",5005)
